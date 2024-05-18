@@ -1,0 +1,35 @@
+"""
+Author: Kanak Sachan
+Date: 2024-05-18
+Copyright (c) 2024 Kanak Sachan
+Description: A basic definition of Flask application.
+"""
+
+Flask is a micro web framework written in Python that is designed to be simple and flexible. 
+It is classified as a microframework because it does not require particular tools or libraries beyond what is included in the Python standard library. However, Flask supports extensions that can add application features as if they were implemented in Flask itself. These extensions exist for object-relational mappers (ORM), form validation, upload handling, various open authentication technologies, and more.
+
+Key Features of Flask:- 
+
+Lightweight and Modular: Flask is lightweight because it is minimalistic. It gives developers the freedom to choose the tools and libraries they want to use. Flask applications can be structured in various ways and can be expanded with numerous extensions.
+
+Built-in Development Server and Debugger: Flask includes a built-in development server and a debugger that makes it easy to test and debug applications during development.
+
+RESTful Request Dispatching: Flask supports RESTful request dispatching, making it easy to create APIs and handle different HTTP methods.
+
+Integrated Unit Testing: Flask comes with an integrated unit testing support, which makes it easier to write tests for your application.
+
+Jinja2 Templating: Flask uses Jinja2 templating engine, which allows developers to build dynamic web pages with templating. Jinja2 provides a robust and flexible way to generate HTML.
+
+Extensive Documentation: Flask has extensive and well-organized documentation, making it easier for developers to understand and use the framework.
+
+WSGI Compliance: Flask is WSGI-compliant, which means it can be run with any WSGI-compatible server.
+
+
+Explanation of the flask based on some Example
+Imports: from flask import Flask imports the Flask class from the Flask library.
+
+App Instance: app = Flask(__name__) creates an instance of the Flask class. This instance is the WSGI application.
+
+Routes: @app.route('/') is a decorator that defines the route for the URL /. The function hello_world() is called when this route is accessed.
+
+Run the App: if __name__ == '__main__': app.run(debug=True) runs the application on the local development server. The debug=True flag enables the debug mode, which provides an interactive debugger and restarts the server automatically when code changes are detected.
